@@ -1,0 +1,254 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the header and navigation */
+  header {
+    background-color: #020617;
+    padding: 20px;
+  }
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #d4d4d4;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 10px;
+  }
+  
+  nav ul li a:hover {
+      color: #0098db;
+  }
+  
+  /* Style the hero section */
+  section#home {
+      background-image: url("path/to/hero-image.jpg");
+      background-position: center center;
+      background-size: cover;
+    background-color: #b91c1c;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  section#home h1 {
+      font-size: 3rem;
+      color: #2dd4bf;
+      text-shadow: 2px 2px #333;
+      margin-bottom: 1rem;
+  }
+  
+  section#home p {
+      font-size: 1.5rem;
+      color: #f5f5f5;
+      text-shadow: 2px 2px #333;
+      margin-bottom: 2rem;
+  }
+  
+  section#home .cta {
+      background-color: #0098db;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  }
+  
+  section#home .cta:hover {
+      background-color: #0078a8;
+  }
+  
+  /* Style the services section */
+  section#services {
+      background-color: #0d9488;
+      padding: 50px;
+  }
+  
+  section#services h2 {
+      font-size: 2rem;
+      color: #f3f4f6;
+      margin-bottom: 2rem;
+  }
+  
+  section#services ul {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  section#services li {
+      flex: 1 1 30%;
+      margin: 0 10px 20px;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    list-style-type: none;
+  }
+  
+  section#services li:hover {
+      box-shadow: 0px 0px 10px #b91c1c;
+  }
+  
+  section#services h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 1rem;
+  }
+  
+  section#services p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 1rem;
+  }
+  
+  section#services .cta {
+      background-color: #0098db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  }
+  
+  section#services .cta:hover {
+      background-color: #0078a8;
+  }
+  
+  /* Style the about section */
+  section#about {
+      background-color: #713f12;
+      padding: 50px;
+      text-align: center;
+  }
+  
+  section#about h2 {
+      font-size: 2rem;
+      color: #d1d5db;
+      margin-bottom: 2rem;
+  }
+  
+  section#about p {
+      font-size: 1.2rem;
+      color: #f9fafb;
+      margin-bottom: 2rem;
+  }
+  
+  /* Style the contact section */
+  section#contact {
+      background-color: #991b1b;
+      padding: 50px;
+      text-align: center;
+  }
+  
+  section#contact h2 {
+      font-size: 2rem;
+      color: #f8fafc;
+      margin-bottom: 2rem;
+  }
+  
+  section#contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  section#contact label {
+      font-size: 1.2rem;
+      color: #f8fafc;
+      margin-bottom: 0.5rem;
+      text-align: left;
+  }
+  
+  section#contact input[type="text"], section#contact input[type="email"], section#contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #f8f8f8;
+      font-size: 1.1rem;
+      color: #333;
+  }
+  
+  section#contact textarea {
+      height: 150px;
+      resize: none;
+  }
+  
+  section#contact input[type="submit"] {
+      background-color: #0098db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      border: none;
+  }
+  
+  section#contact input[type="submit"]:hover {
+      background-color: #0078a8;
+  }
+  
+  /* Style the footer */
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  footer p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+  }
+  
+  footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  }
+  
+  footer ul li {
+      margin: 0 10px;
+  }
+  
+  footer ul li a {
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  
+  footer ul li a:hover {
+      color: #0098db;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+      header nav ul {
+          flex-direction: column;
+          align-items: center;
+      }
+      header nav ul li {
+          margin-bottom: 1rem;
+      }
+      section#services li {
+          flex: 1 1 100%;
+          margin: 0 0 20px;
+      }
+  }
